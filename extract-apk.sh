@@ -13,6 +13,7 @@ readonly WHITE="$(tput setaf 7)"			# White
 readonly BOLD="$(tput bold)"				# Bold
 readonly UNDERLINE="$(tput smul)"			# Underline
 
+# Check if adb is installed
 if [ ! "$(command -v adb)" ]; then
 	echo "${RED}ADB not installed. Install adb first${NONE}"
 fi	
